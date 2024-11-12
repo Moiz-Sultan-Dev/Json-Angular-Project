@@ -1,0 +1,31 @@
+<div class="json-main-container">
+  <div class="column">
+    <div class="data-container">
+      <h3 class="data-title">Modified JSON Header Data</h3>
+      <div class="button-container">
+        <button class="btn" (click)="fetchAndModifyData()">
+          Fetch & Modify
+        </button>
+      </div>
+      <div class="json-scrollable">
+        <pre class="json-pre">{{ modifiedJsonData | json }}</pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="separator"></div>
+
+  <div class="column">
+    <div class="data-container">
+      <h3 class="data-title">Modified JSON Payload Data</h3>
+      <div class="button-container">
+        <button class="btn" (click)="fetchAndModifyPayload()">
+          Modify Payload
+        </button>
+      </div>
+      <div class="json-scrollable">
+        <pre class="json-pre">{{ deepModifiedJsonData | json }}</pre>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #007acc, #6a1b9a);
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.contact-section {
+  padding: 4rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.contact-container {
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 3rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.contact-container h2 {
+  font-size: 2.5rem;
+  color: #ffeb3b;
+  margin-bottom: 1rem;
+}
+
+.intro {
+  font-size: 1.1rem;
+  color: #e0e0e0;
+  margin-bottom: 2rem;
+}
+
+.contact-form-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  color: #333;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  box-shadow: 0 0 10px rgba(106, 27, 154, 0.4);
+  border-color: #6a1b9a;
+  outline: none;
+}
+
+.submit-button {
+  padding: 1rem;
+  font-size: 1.1rem;
+  color: #ffffff;
+  background: linear-gradient(to right, #ff4081, #ff9a76);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.submit-button:hover {
+  background: linear-gradient(to right, #ff9a76, #ff4081);
+  transform: translateY(-3px);
+}
+
+.contact-info {
+  color: #e0e0e0;
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.6;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.contact-info h3 {
+  font-size: 1.5rem;
+  color: #ffeb3b;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .contact-form-wrapper {
+    flex-direction: row;
+  }
+
+  .contact-form {
+    max-width: 400px;
+  }
+
+  .contact-info {
+    text-align: center;
+    max-width: 250px;
+  }
+}
